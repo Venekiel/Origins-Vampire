@@ -1,0 +1,276 @@
+{
+    "name": "Metamorph",
+    "description": "You can transform into a bat, at the cost of health.",
+        "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "You become slower, weaker, more frail, and unable to use certain tools."
+        }
+    ],
+    "type": "apoli:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false
+    },
+    "invis": {
+        "type": "origins:invisibility",
+        "render_armor": false,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "death": {
+        "type": "origins:action_on_callback",
+        "entity_action_respawned": {
+            "type": "origins:toggle",
+            "power": "*:*_toggle"
+        }
+    },
+    "sprint": {
+        "type": "origins:prevent_sprinting",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+
+    },
+    "noarmor": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "generic.armor",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        "tick_rate": 2,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "noad": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "generic.attack_damage",
+            "value": -1,
+            "operation": "multiply_total"
+        },
+        "tick_rate": 2,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "hp": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "generic.max_health",
+            "value": -14,
+            "operation": "addition"
+        },
+        "tick_rate": 2,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "nobow": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "bow"
+            }
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "nocbow": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "crossbow"
+            }
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "notrident": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "trident"
+            }
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "flight": {
+        "type": "origins:creative_flight",
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+  "slowfall": {
+	"type": "apoli:modify_falling",
+	"velocity": 0.01,
+	"take_fall_damage": false,
+	"condition": {
+	"type": "origins:or",
+	"conditions": [
+	  {
+		"type": "origins:and",
+		"conditions": [
+		  {
+			"type": "origins:sneaking"
+		  },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+		]
+	  },
+	  {
+		"type": "origins:and",
+		"conditions": [
+		  {
+			"type": "origins:sneaking",
+			"inverted": true
+		  },
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                }
+		]
+	  }
+	]
+	}
+},
+    "fly_speed": {
+        "type": "origins:modify_air_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": -0.4
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:creative_flying"
+                        },
+                        {
+                            "type": "origins:gamemode",
+                            "gamemode": "creative",
+                            "inverted": true
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:gamemode",
+                    "gamemode": "creative",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+	"scale": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:power_active",
+				"power": "*:*_toggle",
+				"inverted": true
+			},
+			"if_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "scale set pehkui:height 0.5"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "scale set pehkui:width 0.5"
+					}
+				]
+			},
+			"else_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "scale reset @s"
+					}
+				]
+			}
+		}
+	},
+    "bat": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon bat ~ ~ ~ {NoAI:1b,Tags:['Vamp_Bat'],Invulnerable:1b}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.bat.takeoff master @s ~ ~ ~ 1 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle dust 0 0 0 5 ~ ~0.9 ~ .4 .4 .4 1 10 normal"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle dust 1 0 0 3 ~ ~0.9 ~ .4 .4 .4 1 8 normal"
+                }
+            ]
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "tp @e[type=bat,sort=nearest,limit=1,tag=Vamp_Bat,distance=..6] @s"
+        },
+        "falling_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound entity.bat.takeoff master @s ~ ~ ~ 1 1"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle dust 0 0 0 5 ~ ~0.9 ~ .4 .4 .4 1 10 normal"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tp @e[type=bat,sort=nearest,limit=1,tag=Vamp_Bat,distance=..6] ~ -1000 ~"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle dust 1 0 0 3 ~ ~0.9 ~ .4 .4 .4 1 8 normal"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    }
+}

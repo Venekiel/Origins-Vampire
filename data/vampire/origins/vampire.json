@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"vampire:vampirism",
+		"vampire:metamorph",
+		"vampire:vampiric",
+		"vampire:unholy",
+		"vampire:stakes",
+		"vampire:heliophobia"
+	],
+	"icon": "minecraft:beetroot_soup",
+	"order": 1,
+	"impact": 3,
+	"name": "Vampire",
+	"description": "The Vampires are an ancient, bloodsucking race, with an aversion to sunlight."
+}
