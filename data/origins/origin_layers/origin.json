@@ -1,6 +1,7 @@
 {
   "replace": false,
   "origins": [
-    "origins_vampire:vampire"
+    "origins_vampire:vampire",
+    "origins_vampire:vampire_lord"
   ]
 }
