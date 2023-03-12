@@ -250,7 +250,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:magical"
+				"tag": "origins_vampire:magical"
 			}
 		},
 		"condition": {
@@ -348,7 +348,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:excellent"
+				"tag": "origins_vampire:excellent"
 			}
 		},
 		"condition": {
@@ -446,7 +446,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:average"
+				"tag": "origins_vampire:average"
 			}
 		},
 		"condition": {
@@ -544,7 +544,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:rotten"
+				"tag": "origins_vampire:rotten"
 			}
 		},
 		"condition": {
@@ -664,7 +664,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:toxic"
+				"tag": "origins_vampire:toxic"
 			}
 		},
 		"condition": {
@@ -775,7 +775,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:sizzling"
+				"tag": "origins_vampire:sizzling"
 			}
 		},
 		"condition": {
@@ -881,7 +881,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:explosive"
+				"tag": "origins_vampire:explosive"
 			}
 		},
 		"condition": {
@@ -992,7 +992,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:otherworldly"
+				"tag": "origins_vampire:otherworldly"
 			}
 		},
 		"condition": {
@@ -1120,7 +1120,7 @@
 			"type": "origins:target_condition",
 			"condition": {
 				"type": "origins:in_tag",
-				"tag": "vampire:slimey"
+				"tag": "origins_vampire:slimey"
 			}
 		},
 		"condition": {

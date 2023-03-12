@@ -1,11 +1,11 @@
 {
 	"powers": [
-		"vampire:vampirism",
-		"vampire:metamorph",
-		"vampire:vampiric",
-		"vampire:unholy",
-		"vampire:stakes",
-		"vampire:heliophobia"
+		"origins_vampire:vampirism",
+		"origins_vampire:metamorph",
+		"origins_vampire:vampiric",
+		"origins_vampire:unholy",
+		"origins_vampire:stakes",
+		"origins_vampire:heliophobia"
 	],
 	"icon": "minecraft:beetroot_soup",
 	"order": 1,
