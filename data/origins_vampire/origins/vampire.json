@@ -17,6 +17,8 @@
 		"origins_vampire:vampiric",
 		"origins_vampire:unholy",
 		"origins_vampire:stakes",
-		"origins_vampire:heliophobia"
+		"origins_vampire:heliophobia",
+		"origins_vampire:bottled",
+		"origins_vampire:deathfx"
 	]
 }

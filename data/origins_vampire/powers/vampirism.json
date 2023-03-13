@@ -1,13 +1,13 @@
 {
 	"name": "Vampirism",
 	"description": "You drink the blood of others for survival. Blood is used to heal rapidly.",
-        "badges": [
-        {
-            "type": "origins:tooltip",
-            "sprite": "origins:textures/gui/badge/info.png",
-            "text": "You cannot eat, instead you Sneak + Right entities. This will:\n- Fill your Blood Bar\n- Deal minimal damage to the target\n- Grant you various effects depending on the creature"
-        }
-    ],
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "You cannot eat, instead you Sneak + Right entities. This will:\n- Fill your Blood Bar\n- Deal minimal damage to the target\n- Grant you various effects depending on the creature"
+		}
+	],
 	"type": "origins:multiple",
 	"resource": {
 		"type": "origins:resource",
@@ -84,14 +84,14 @@
 			"saturation": 20
 		}
 	},
-	"sprinting":{
+	"sprinting": {
 		"type": "origins:conditioned_attribute",
-	    "modifier": {
-	        "attribute": "minecraft:generic.movement_speed",
-	        "operation": "addition",
-	        "value": -0.023,
-	        "name": "No Sprint"
-	    },
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": -0.023,
+			"name": "No Sprint"
+		},
 		"tick_rate": 1,
 		"condition": {
 			"type": "origins:and",
@@ -212,7 +212,7 @@
 				},
 				{
 					"type": "origins:actor_action",
-                        "action": {
+					"action": {
 						"type": "origins:and",
 						"actions": [
 							{
@@ -236,11 +236,11 @@
 									}
 								]
 							},
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "*:*_resource",
-                                "change": 4
-                            }
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"change": 4
+							}
 						]
 					}
 				}
@@ -270,9 +270,7 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
 	"excellent": {
 		"type": "origins:action_on_entity_use",
@@ -295,7 +293,7 @@
 								"type": "origins:execute_command",
 								"command": "particle dust .45 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "particle dust 0 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 5 normal"
 							},
@@ -368,11 +366,9 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
-    "average": {
+	"average": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
 			"type": "origins:and",
@@ -393,7 +389,7 @@
 								"type": "origins:execute_command",
 								"command": "particle dust .35 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "particle dust 0 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 5 normal"
 							},
@@ -466,11 +462,9 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
-    "rotten": {
+	"rotten": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
 			"type": "origins:and",
@@ -491,7 +485,7 @@
 								"type": "origins:execute_command",
 								"command": "particle dust .015 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "particle dust 0 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 5 normal"
 							},
@@ -564,11 +558,9 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
-    "toxic": {
+	"toxic": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
 			"type": "origins:and",
@@ -626,7 +618,7 @@
 				},
 				{
 					"type": "origins:actor_action",
-                        "action": {
+					"action": {
 						"type": "origins:and",
 						"actions": [
 							{
@@ -650,11 +642,11 @@
 									}
 								]
 							},
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "*:*_resource",
-                                "change": 1
-                            }
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"change": 1
+							}
 						]
 					}
 				}
@@ -684,11 +676,9 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
-    "sizzling": {
+	"sizzling": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
 			"type": "origins:and",
@@ -709,11 +699,11 @@
 								"type": "origins:execute_command",
 								"command": "particle dust 1 .5 0 1 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "particle flame ~ ~1.35 ~ 0.1 0.1 0.1 0.1 10 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "playsound minecraft:entity.generic.drink ambient @p"
 							},
@@ -754,18 +744,18 @@
 				},
 				{
 					"type": "origins:actor_action",
-                        "action": {
+					"action": {
 						"type": "origins:and",
 						"actions": [
 							{
-                                "type": "origins:set_on_fire",
-                                        "duration": 10
-                            },
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "*:*_resource",
-                                "change": 2
-                            }
+								"type": "origins:set_on_fire",
+								"duration": 10
+							},
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"change": 2
+							}
 						]
 					}
 				}
@@ -795,11 +785,9 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
-    "explosive": {
+	"explosive": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
 			"type": "origins:and",
@@ -820,7 +808,7 @@
 								"type": "origins:execute_command",
 								"command": "particle dust .2 .2 .2 1 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "playsound minecraft:entity.generic.drink ambient @p"
 							},
@@ -857,21 +845,21 @@
 				},
 				{
 					"type": "origins:actor_action",
-                        "action": {
+					"action": {
 						"type": "origins:and",
 						"actions": [
 							{
-                                "type": "origins:explode",
-                                "power": 1,
-                                "destruction_type": "none",
-                                "damage_self": true,
-                                "create_fire": false
-                            },
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "*:*_resource",
-                                "change": 3
-                            }
+								"type": "origins:explode",
+								"power": 1,
+								"destruction_type": "none",
+								"damage_self": true,
+								"create_fire": false
+							},
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"change": 3
+							}
 						]
 					}
 				}
@@ -901,11 +889,9 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
-    "otherworldly": {
+	"otherworldly": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
 			"type": "origins:and",
@@ -926,7 +912,7 @@
 								"type": "origins:execute_command",
 								"command": "particle dust 1 .7 1 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "playsound minecraft:entity.generic.drink ambient @p"
 							},
@@ -963,26 +949,26 @@
 				},
 				{
 					"type": "origins:actor_action",
-                        "action": {
+					"action": {
 						"type": "origins:and",
 						"actions": [
-                            {
-                                "type": "origins:execute_command",
-                                "command": "spreadplayers ~ ~ 0 30 under 127 false @s"
-                            },
-                            {
+							{
+								"type": "origins:execute_command",
+								"command": "spreadplayers ~ ~ 0 30 under 127 false @s"
+							},
+							{
 								"type": "origins:execute_command",
 								"command": "playsound minecraft:entity.enderman.teleport ambient @p"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "particle dust 1 .7 1 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 							},
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "*:*_resource",
-                                "change": 3
-                            }
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"change": 3
+							}
 						]
 					}
 				}
@@ -1012,11 +998,9 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	},
-    "slimey": {
+	"slimey": {
 		"type": "origins:action_on_entity_use",
 		"bientity_action": {
 			"type": "origins:and",
@@ -1033,11 +1017,11 @@
 					"action": {
 						"type": "origins:and",
 						"actions": [
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "particle item_slime ~ ~1.35 ~ 0.1 0.1 0.1 0.1 10 normal"
 							},
-                            {
+							{
 								"type": "origins:execute_command",
 								"command": "playsound minecraft:item.honey_bottle.drink ambient @p"
 							},
@@ -1074,18 +1058,18 @@
 				},
 				{
 					"type": "origins:actor_action",
-                        "action": {
+					"action": {
 						"type": "origins:and",
 						"actions": [
-                            {
-                                "type": "origins:execute_command",
-                                "command": "give @s slime_ball 1"
-                            },
-                            {
+							{
+								"type": "origins:execute_command",
+								"command": "give @s slime_ball 1"
+							},
+							{
 								"type": "origins:execute_command",
 								"command": "particle item_slime ~ ~1.35 ~ 0.1 0.1 0.1 0.1 10 normal"
 							},
-                            {
+							{
 								"type": "origins:apply_effect",
 								"effects": [
 									{
@@ -1106,11 +1090,11 @@
 									}
 								]
 							},
-                            {
-                                "type": "origins:change_resource",
-                                "resource": "*:*_resource",
-                                "change": 2
-                            }
+							{
+								"type": "origins:change_resource",
+								"resource": "*:*_resource",
+								"change": 2
+							}
 						]
 					}
 				}
@@ -1140,8 +1124,6 @@
 		"item_condition": {
 			"type": "origins:empty"
 		},
-		"hands": [
-			"main_hand"
-		]
+		"hands": ["main_hand"]
 	}
 }
