@@ -16,6 +16,6 @@
 		"origins_vampire:deathfx",
 		"origins_vampire:winged",
 		"origins_vampire:almighty_wings",
-		"origins_vampire:float"
+		"origins_vampire:hud/float"
 	]
 }
