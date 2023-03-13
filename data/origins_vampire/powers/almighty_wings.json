@@ -52,7 +52,7 @@
 	},
 	"cooldown": 20,
 	"key": {
-		"key": "key.sprint",
+		"key": "key.forward",
 		"continuous": true
 	}
 }

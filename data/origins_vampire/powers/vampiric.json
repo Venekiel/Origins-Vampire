@@ -44,7 +44,7 @@
 			"compare_to": 50
 		}
 	},
-    "speed": {
+	"speed": {
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {
@@ -65,7 +65,7 @@
 			"compare_to": 40
 		}
 	},
-    "resistant": {
+	"resistant": {
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {
@@ -77,29 +77,29 @@
 				"is_ambient": false,
 				"show_particles": false,
 				"show_icon": false
-			   }
-			},
-			"condition": {
-				"type": "origins:and",
-				"conditions": [
-					{
-						"type": "origins:exposed_to_sun",
-						"inverted": true
-					},
-					{
-						"type": "origins:resource",
-						"resource": "origins_vampire:vampirism_resource",
-						"comparison": ">=",
-						"compare_to": 50
-					},
-					{
-						"type": "origins:power_active",
-						"power": "*:metamorph_toggle",
-						"inverted": true
-					}
-				]
 			}
 		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:exposed_to_sun",
+					"inverted": true
+				},
+				{
+					"type": "origins:resource",
+					"resource": "origins_vampire:vampirism_resource",
+					"comparison": ">=",
+					"compare_to": 50
+				},
+				{
+					"type": "origins:power_active",
+					"power": "*:metamorph_toggle",
+					"inverted": true
+				}
+			]
+		}
+	},
 	"weak": {
 		"type": "origins:action_over_time",
 		"interval": 1,
@@ -121,7 +121,7 @@
 			"compare_to": 30
 		}
 	},
-    "fatigue": {
+	"fatigue": {
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {
@@ -142,7 +142,7 @@
 			"compare_to": 20
 		}
 	},
-    "slow": {
+	"slow": {
 		"type": "origins:action_over_time",
 		"interval": 1,
 		"entity_action": {
@@ -163,68 +163,56 @@
 			"compare_to": 10
 		}
 	},
-    "vision1": {
-        "type": "origins:night_vision",
-        "strength": 0.2,
+	"vision1": {
+		"type": "origins:night_vision",
+		"strength": 0.2,
 		"condition": {
 			"type": "origins:resource",
 			"resource": "origins_vampire:vampirism_resource",
 			"comparison": ">=",
 			"compare_to": 20
-        }
-      },
-      "vision2": {
-        "type": "origins:night_vision",
-        "strength": 0.4,
+		}
+	},
+	"vision2": {
+		"type": "origins:night_vision",
+		"strength": 0.4,
 		"condition": {
 			"type": "origins:resource",
 			"resource": "origins_vampire:vampirism_resource",
 			"comparison": ">=",
 			"compare_to": 30
-        }
-      },
-      "vision3": {
-        "type": "origins:night_vision",
-        "strength": 0.6,
+		}
+	},
+	"vision3": {
+		"type": "origins:night_vision",
+		"strength": 0.6,
 		"condition": {
 			"type": "origins:resource",
 			"resource": "origins_vampire:vampirism_resource",
 			"comparison": ">=",
 			"compare_to": 40
-        }
-      },
-      "vision4": {
-        "type": "origins:night_vision",
-        "strength": 0.8,
+		}
+	},
+	"vision4": {
+		"type": "origins:night_vision",
+		"strength": 0.8,
 		"condition": {
 			"type": "origins:resource",
 			"resource": "origins_vampire:vampirism_resource",
 			"comparison": ">=",
 			"compare_to": 50
-        }
-      },
-      "desaturated": {
-        "type": "origins:shader",
-        "shader": "minecraft:shaders/post/desaturate.json",
+		}
+	},
+	"desaturated": {
+		"type": "origins:shader",
+		"shader": "minecraft:shaders/post/desaturate.json",
 		"condition": {
 			"type": "origins:resource",
 			"resource": "origins_vampire:vampirism_resource",
 			"comparison": "<=",
 			"compare_to": 10
-        },
-        "toggleable": false,
-        "hidden": true
-    },
-    "saturated": {
-        "type": "origins:shader",
-        "shader": "minecraft:shaders/post/color_convolve.json",
-		"condition": {
-			"type": "origins:resource",
-			"resource": "origins_vampire:vampirism_resource",
-			"comparison": ">=",
-			"compare_to": 60
-        },
-        "toggleable": false,
-        "hidden": true
-    }
+		},
+		"toggleable": false,
+		"hidden": true
+	}
 }
