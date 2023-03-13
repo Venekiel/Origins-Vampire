@@ -1,0 +1,89 @@
+{
+	"type": "origins:multiple",
+	"hidden": true,
+	"grant": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_bar",
+			"comparison": ">",
+			"compare_to": 0
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:apply_effect",
+					"effects": [
+						{
+							"effect": "minecraft:slow_falling",
+							"duration": 2,
+							"is_ambient": false,
+							"show_particles": false,
+							"show_icon": false
+						}
+					]
+				}
+			]
+		}
+	},
+	"bar": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"start_value": 0,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"nofloat": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "*:*_bar",
+					"comparison": ">",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:on_block"
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_bar",
+			"change": -1
+		}
+	},
+	"nofloat2": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "*:*_bar",
+					"comparison": ">",
+					"compare_to": 0
+				},
+				{
+					"type": "origins:fluid_height",
+					"fluid": "minecraft:water",
+					"comparison": ">",
+					"compare_to": 0
+				}
+			]
+		},
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_bar",
+			"change": -1
+		}
+	}
+}

@@ -14,8 +14,8 @@
 		"origins_vampire:heliophobia",
 		"origins_vampire:bottled",
 		"origins_vampire:deathfx",
-		"origins_vampire:bat_wings",
-		"origins_vampire:air_dash",
-		"origins_vampire:air_brakes"
+		"origins_vampire:winged",
+		"origins_vampire:almighty_wings",
+		"origins_vampire:float"
 	]
 }
