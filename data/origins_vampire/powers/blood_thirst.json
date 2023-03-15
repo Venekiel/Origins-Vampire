@@ -84,21 +84,11 @@
 			"saturation": 20
 		}
 	},
-	"sprinting": {
-		"type": "origins:conditioned_attribute",
-		"modifier": {
-			"attribute": "minecraft:generic.movement_speed",
-			"operation": "addition",
-			"value": -0.023,
-			"name": "No Sprint"
-		},
-		"tick_rate": 1,
+	"no_sprinting": {
+		"type": "origins:prevent_sprinting",
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
-				{
-					"type": "origins:sprinting"
-				},
 				{
 					"type": "origins:resource",
 					"resource": "*:*_resource",
