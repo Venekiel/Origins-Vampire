@@ -1,18 +1,8 @@
 {
 	"name": "Vampire",
 	"description": "The Vampires are an ancient, bloodsucking race, with an aversion to sunlight.",
-	"icon": "minecraft:beetroot_soup",
-	"order": 1,
-	"impact": 3,
-	"upgrades": [
-		{
-			"condition": "minecraft:end/kill_dragon",
-			"origin": "origins_vampire:vampire_lord",
-			"announcement": "You have killed an ender dragon! You become a Vampire Lord"
-		}
-	],
 	"powers": [
-		"origins_vampire:vampirism",
+		"origins_vampire:blood_thirst",
 		"origins_vampire:metamorph",
 		"origins_vampire:vampiric",
 		"origins_vampire:unholy",
@@ -20,5 +10,14 @@
 		"origins_vampire:heliophobia",
 		"origins_vampire:bottled",
 		"origins_vampire:deathfx"
-	]
+	],
+	"upgrades": [
+		{
+			"condition": "minecraft:end/kill_dragon",
+			"origin": "origins_vampire:vampire_lord",
+			"announcement": "You have killed an ender dragon! You become a Vampire Lord"
+		}
+	],
+	"order": 1,
+	"impact": 3
 }

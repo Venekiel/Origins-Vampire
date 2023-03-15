@@ -1,18 +1,21 @@
 {
-	"name": "Heliophobia",
-	"description": "Sunlight will burn you, and prevent your healing.",
-	"type": "origins:burn",
-	"interval": 1,
-	"burn_duration": 1,
-	"condition": {
-		"type": "origins:and",
-		"conditions": [{
-			"type": "origins:exposed_to_sun"
-		},
-		{
-			"type": "origins:power_active",
-			"power": "*:metamorph_toggle",
-			"inverted": true
-		}]
-	}
+    "name": "Heliophobia",
+    "description": "Sunlight will burn you, and prevent your healing.",
+    "type": "origins:burn",
+    "should_render": false,
+    "interval": 1,
+    "burn_duration": 1,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sun"
+            },
+            {
+                "type": "origins:power_active",
+                "power": "*:metamorph_toggle",
+                "inverted": true
+            }
+        ]
+    }
 }

@@ -1,6 +1,8 @@
 {
-  "pack": {
-    "pack_format": 10,
-    "description": "New Vampire Origin for the Origins Mod."
-  }
+    "pack": {
+        "name": "Origins-Vampire",
+        "id": "origins_vampire",
+        "pack_format": 10,
+        "description": "New Vampire Origin for the Origins Mod."
+    }
 }

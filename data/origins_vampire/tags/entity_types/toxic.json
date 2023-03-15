@@ -1,9 +1,9 @@
 {
-  "values":[
-	"minecraft:frog",
-	"minecraft:cave_spider",
-	"minecraft:spider",
-	"minecraft:pufferfish",
-	"minecraft:silverfish"
-  ]
+    "values": [
+        "minecraft:frog",
+        "minecraft:cave_spider",
+        "minecraft:spider",
+        "minecraft:pufferfish",
+        "minecraft:silverfish"
+    ]
 }

@@ -1,7 +1,7 @@
 {
-  "replace": false,
-  "origins": [
-    "origins_vampire:vampire",
-    "origins_vampire:vampire_lord"
-  ]
+	"auto_choose": 0,
+	"randomizer": 0,
+	"replace": 0,
+	"allow_random_unchoosable": 0,
+	"origins": ["origins_vampire:vampire", "origins_vampire:vampire_lord"]
 }

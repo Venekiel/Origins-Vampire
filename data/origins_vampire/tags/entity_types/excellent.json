@@ -1,12 +1,12 @@
 {
-  "values":[
-  	"minecraft:villager",
-  	"minecraft:vindicator",
-  	"minecraft:wandering_trader",
-  	"minecraft:player",
-  	"minecraft:pillager",
-  	"minecraft:piglin",
-  	"minecraft:piglin_brute",
+    "values": [
+        "minecraft:villager",
+        "minecraft:vindicator",
+        "minecraft:wandering_trader",
+        "minecraft:player",
+        "minecraft:pillager",
+        "minecraft:piglin",
+        "minecraft:piglin_brute",
         "minecraft:goat"
-  ]
+    ]
 }
