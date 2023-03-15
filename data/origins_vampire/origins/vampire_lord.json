@@ -13,7 +13,8 @@
 		"origins_vampire:deathfx",
 		"origins_vampire:winged",
 		"origins_vampire:flight/wing_flap",
-		"origins_vampire:hud/float"
+		"origins_vampire:hud/float",
+		"origins_vampire:resist_freezing"
 	],
 	"unchoosable": true,
 	"order": 1,

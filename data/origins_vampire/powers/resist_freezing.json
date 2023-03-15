@@ -1,0 +1,9 @@
+{
+	"name": "Cold as ice",
+	"description": "You are naturally more resistant to freezing.",
+	"type": "origins:invulnerability",
+	"damage_condition": {
+		"type": "origins:name",
+		"name": "freeze"
+	}
+}
