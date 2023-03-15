@@ -39,6 +39,20 @@
 				"type": "origins:power_active",
 				"power": "*:metamorph_toggle",
 				"inverted": true
+			},
+			{
+				"type": "origins:or",
+				"inverted": true,
+				"conditions": [
+					{
+						"type": "origins:gamemode",
+						"gamemode": "creative"
+					},
+					{
+						"type": "origins:gamemode",
+						"gamemode": "spectator"
+					}
+				]
 			}
 		]
 	}
