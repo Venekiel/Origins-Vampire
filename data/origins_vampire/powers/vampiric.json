@@ -137,7 +137,7 @@
 		},
 		"condition": {
 			"type": "origins:resource",
-			"resource": "origins_vampire:blood_thirstrst_resource",
+			"resource": "origins_vampire:blood_thirst_resource",
 			"comparison": "<=",
 			"compare_to": 20
 		}
