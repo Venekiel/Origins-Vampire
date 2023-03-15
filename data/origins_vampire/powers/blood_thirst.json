@@ -71,6 +71,10 @@
 				{
 					"type": "origins:on_fire",
 					"inverted": true
+				},
+				{
+					"type": "origins:exposed_to_sun",
+					"inverted": true
 				}
 			]
 		}
