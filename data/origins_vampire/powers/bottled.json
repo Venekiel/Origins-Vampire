@@ -102,7 +102,7 @@
 		"type": "origins:action_on_item_use",
 		"entity_action": {
 			"type": "origins:change_resource",
-			"resource": "origins_vampire:blood_thirst_resource",
+			"resource": "origins_vampire:bloodlust_resource",
 			"change": 25
 		},
 		"item_condition": {

@@ -1,8 +1,9 @@
 {
 	"name": "Vampire",
 	"description": "The Vampires are an ancient, bloodsucking race, with an aversion to sunlight.",
+	"icon": "minecraft:beetroot_soup",
 	"powers": [
-		"origins_vampire:blood_thirst",
+		"origins_vampire:bloodlust",
 		"origins_vampire:metamorph",
 		"origins_vampire:vampiric",
 		"origins_vampire:unholy",
