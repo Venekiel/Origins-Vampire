@@ -1,0 +1,7 @@
+{
+	"name": "Poison immunity",
+	"Description": "You are immune to poison.",
+	"type": "origins:effect_immunity",
+	"effect": "minecraft:poison",
+	"hidden": true
+}
