@@ -1,27 +1,27 @@
 {
-    "type": "origins:action_over_time",
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:execute_command",
-                "command": "particle dust .6 .91 .9 1.5 ~ ~1 ~ .2 .2 .2 1 15 normal"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "playsound entity.phantom.death master @a"
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "particle soul ~ ~1 ~"
-            }
-        ]
-    },
-    "interval": 20,
-    "condition": {
-        "type": "origins:health",
-        "comparison": "==",
-        "compare_to": 0
-    },
-    "hidden": true
+	"type": "origins:action_over_time",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "particle dust .6 .91 .9 1.5 ~ ~1 ~ .2 .2 .2 1 15 normal"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "playsound minecraft:entity.husk.death voice @a[distance=..15] ~ ~ ~"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle soul ~ ~1 ~"
+			}
+		]
+	},
+	"interval": 20,
+	"condition": {
+		"type": "origins:health",
+		"comparison": "==",
+		"compare_to": 0
+	},
+	"hidden": true
 }

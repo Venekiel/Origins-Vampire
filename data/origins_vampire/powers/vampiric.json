@@ -1,6 +1,13 @@
 {
 	"name": "Vampiric",
-	"description": "Your strength and eyesight scales with your blood level.",
+	"description": "Your strength and eyesight scales with your food level.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/info.png",
+			"text": "You are immune to poison. Your strength, speed, resistance and eyesight scales with your food level."
+		}
+	],
 	"type": "origins:multiple",
 	"strength2": {
 		"type": "origins:action_over_time",
