@@ -433,7 +433,7 @@
 					"type": "origins:actor_action",
 					"action": {
 						"type": "origins:execute_command",
-						"command": "title @s actionbar \"[§cBlood Quality: §8Rotten§f]\""
+						"command": "title @s actionbar [{\"text\":\"Blood Quality: \",\"color\":\"red\"},{\"text\":\"Rotten\",\"color\":\"#934900\"}]"
 					}
 				},
 				{

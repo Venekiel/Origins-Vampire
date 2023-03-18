@@ -209,7 +209,7 @@
 		"type": "origins:action_on_item_use",
 		"entity_action": {
 			"type": "origins:feed",
-			"food": 7,
+			"food": 8,
 			"saturation": 0
 		},
 		"item_condition": {
@@ -327,7 +327,7 @@
 				},
 				{
 					"type": "origins:feed",
-					"food": 3,
+					"food": 6,
 					"saturation": 0
 				}
 			]
@@ -461,7 +461,7 @@
 				},
 				{
 					"type": "origins:feed",
-					"food": 4,
+					"food": 8,
 					"saturation": 0
 				}
 			]
@@ -586,7 +586,7 @@
 				},
 				{
 					"type": "origins:feed",
-					"food": 3,
+					"food": 6,
 					"saturation": 0
 				}
 			]
@@ -594,6 +594,114 @@
 		"item_condition": {
 			"type": "origins:nbt",
 			"nbt": "{BloodQuality:otherworldly}"
+		}
+	},
+	"store_rotten": {
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking",
+					"inverted": true
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:glass_bottle"
+						}
+					}
+				}
+			]
+		},
+		"type": "origins:action_on_entity_use",
+		"bientity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:give",
+						"stack": {
+							"item": "minecraft:potion",
+							"tag": "{Potion:\"minecraft:empty\",display:{Name:'{\"text\":\"Bottle of blood\",\"italic\":false}',Lore:['{\"text\":\"Rotten\",\"color\":\"#934900\"}']},HideFlags:32,CustomPotionColor:7667712,BloodQuality:rotten}"
+						},
+						"preferred_slot": "offhand"
+					}
+				},
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:equipped_item_action",
+						"equipment_slot": "offhand",
+						"action": {
+							"type": "origins:consume",
+							"amount": 1
+						}
+					}
+				},
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:apply_effect",
+						"effect": {
+							"effect": "minecraft:slowness",
+							"duration": 60,
+							"amplifier": 1,
+							"show_particles": false,
+							"show_icon": false
+						}
+					}
+				},
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:damage",
+						"amount": 3,
+						"source": {
+							"name": "magic",
+							"bypasses_armor": true,
+							"unblockable": true,
+							"magic": true
+						}
+					}
+				},
+				{
+					"type": "origins:target_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "particle dust .5 0 0 1.5 ~ ~0.9 ~ 0.2 0.2 0.2 2 10 normal"
+					}
+				},
+				{
+					"type": "origins:actor_action",
+					"action": {
+						"type": "origins:execute_command",
+						"command": "playsound minecraft:item.bottle.fill ambient @a ~ ~ ~ 1 .7"
+					}
+				}
+			]
+		},
+		"bientity_condition": {
+			"type": "origins:target_condition",
+			"condition": {
+				"type": "origins:in_tag",
+				"tag": "origins_vampire:rotten"
+			}
+		}
+	},
+	"drink_rotten": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 2,
+			"saturation": 0
+		},
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:rotten}"
 		}
 	}
 }
