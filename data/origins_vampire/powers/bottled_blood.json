@@ -953,7 +953,7 @@
 				},
 				{
 					"type": "origins:feed",
-					"food": 2,
+					"food": 4,
 					"saturation": 0
 				}
 			]
