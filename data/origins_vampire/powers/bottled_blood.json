@@ -810,7 +810,7 @@
 					"duration": 10
 				},
 				{
-					"type": "origins:food_level",
+					"type": "origins:feed",
 					"food": 4,
 					"saturation": 0
 				}
