@@ -1,6 +1,55 @@
 {
 	"hidden": true,
 	"type": "origins:multiple",
+	"prevent_drinking_at_full_hunger": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:average}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:excellent}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:explosive}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:magical}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:otherworldly}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:rotten}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:sizzling}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:slimey}"
+				},
+				{
+					"type": "origins:nbt",
+					"nbt": "{BloodQuality:toxic}"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:food_level",
+			"comparison": "==",
+			"compare_to": 20
+		}
+	},
 	"store_average": {
 		"condition": {
 			"type": "origins:and",
