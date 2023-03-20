@@ -19,7 +19,8 @@
 				"source": {
 					"name": "sun_damage",
 					"fire": true,
-					"unblockable": true
+					"unblockable": true,
+					"bypasses_armor": true
 				}
 			},
 			{
