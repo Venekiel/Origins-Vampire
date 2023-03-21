@@ -3,12 +3,6 @@
 	"description": "You have the ability to glide as if wearing elytra, without needing to equip any.",
 	"type": "origins:elytra_flight",
 	"render_elytra": true,
-	"badges": [
-		{
-			"type": "origins:tooltip",
-			"sprite": "origins:textures/gui/badge/star.png"
-		}
-	],
 	"condition": {
 		"type": "origins:power_active",
 		"power": "*:metamorph_toggle",
