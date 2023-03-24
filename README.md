@@ -25,3 +25,12 @@ Their weakness to fire and sunlight prevents them from healing while affected by
 ### Bat form :
 Vampires can transform into bats to move discretly and prevent the sunlight from affecting them.
 On the other hand this form is more fragile, and does not have hands, preventing them to use their tools.
+
+## Vampire Lord
+They inherit their powers from their previous form, with extras.
+
+### Winged
+Vampire Lords have wings strong enough to propel them through the air while flying.
+
+### Hunter's instinct
+They gained the ability to detect the living around them and know whether they are hostile to them or not.
