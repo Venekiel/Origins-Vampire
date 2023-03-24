@@ -30,7 +30,7 @@ On the other hand this form is more fragile, and does not have hands, preventing
 They inherit their characteristics from their previous form, with extras.
 
 ### Winged :
-Vampire Lords have wings strong enough to propel them through the air while flying.
+Vampire Lords have wings strong enough to propel them forward while flying.
 
 ### Hunter's instinct :
 They gained the ability to detect the living around them and know whether they are hostile to them or not.
