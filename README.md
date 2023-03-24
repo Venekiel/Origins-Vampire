@@ -27,7 +27,7 @@ Vampires can transform into bats to move discretly and prevent the sunlight from
 On the other hand this form is more fragile, and does not have hands, preventing them to use their tools.
 
 ## Vampire Lord
-They inherit their powers from their previous form, with extras.
+They inherit their characteristics from their previous form, with extras.
 
 ### Winged :
 Vampire Lords have wings strong enough to propel them through the air while flying.
