@@ -34,3 +34,6 @@ Vampire Lords have wings strong enough to propel them forward while flying.
 
 ### Hunter's instinct :
 They gained the ability to detect the living around them and know whether they are hostile to them or not.
+
+## Links
+[![modrinth](https://img.shields.io/badge/modrinth-143?style=for-the-badge&logo=modrinth&logoColor=lime&color=black&labelColor=black&link=https://modrinth.com/datapack/origins-vampire)](https://modrinth.com/datapack/origins-vampire)
