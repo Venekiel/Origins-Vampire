@@ -36,5 +36,6 @@ Vampire Lords have wings strong enough to propel them forward while flying.
 They gained the ability to detect the living around them and know whether they are hostile to them or not.
 
 ## Links
-[![curseforge](https://img.shields.io/badge/curseforge-143?style=for-the-badge&logo=curseforge&logoColor=black&color=black&labelColor=orange&link=hhttps://www.curseforge.com/minecraft/mc-mods/origins-vampire)](https://www.curseforge.com/minecraft/mc-mods/origins-vampire)
+[![curseforge](https://img.shields.io/badge/curseforge-143?style=for-the-badge&logo=curseforge&logoColor=black&color=black&labelColor=orange&link=https://www.curseforge.com/minecraft/mc-mods/origins-vampire)](https://www.curseforge.com/minecraft/mc-mods/origins-vampire)
 [![modrinth](https://img.shields.io/badge/modrinth-143?style=for-the-badge&logo=modrinth&logoColor=lime&color=black&labelColor=black&link=https://modrinth.com/datapack/origins-vampire)](https://modrinth.com/datapack/origins-vampire)
+[![support](https://img.shields.io/badge/donate-143?style=for-the-badge&logo=kofi&logoColor=white&color=black&labelColor=salmon&link=https://ko-fi.com/venekiel)](https://img.shields.io/badge/Support-143?style=for-the-badge&logo=kofi&logoColor=white&color=black&labelColor=salmon&link=https://ko-fi.com/venekiel)
