@@ -1,0 +1,54 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"drink": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:apply_effect",
+					"effects": [
+						{
+							"effect": "minecraft:absorption",
+							"duration": 1000,
+							"amplifier": 1,
+							"is_ambient": false,
+							"show_particles": false,
+							"show_icon": false
+						},
+						{
+							"effect": "minecraft:speed",
+							"duration": 1000,
+							"amplifier": 2,
+							"is_ambient": false,
+							"show_particles": false,
+							"show_icon": false
+						}
+					]
+				},
+				{
+					"type": "origins:feed",
+					"food": 8,
+					"saturation": 0
+				}
+			]
+		},
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:magical}"
+		}
+	},
+	"prevent_drinking_at_full_hunger": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:magical}"
+		},
+		"condition": {
+			"type": "origins:food_level",
+			"comparison": "==",
+			"compare_to": 20
+		}
+	}
+}

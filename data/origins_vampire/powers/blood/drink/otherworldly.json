@@ -1,0 +1,45 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"drink": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "spreadplayers ~ ~ 0 30 under 127 false @s"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.enderman.teleport ambient @p"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "particle dust 1 .7 1 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
+				},
+				{
+					"type": "origins:feed",
+					"food": 6,
+					"saturation": 0
+				}
+			]
+		},
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:otherworldly}"
+		}
+	},
+	"prevent_drinking_at_full_hunger": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:otherworldly}"
+		},
+		"condition": {
+			"type": "origins:food_level",
+			"comparison": "==",
+			"compare_to": 20
+		}
+	}
+}
