@@ -6,6 +6,8 @@
 		"origins_vampire:health_regeneration",
 		"origins_vampire:undead",
 		"origins_vampire:death/cry",
+		"origins_vampire:detect_living/friendly",
+		"origins_vampire:detect_living/hostile",
 		"origins_vampire:disable/eating",
 		"origins_vampire:disable/hunger",
 		"origins_vampire:disable/exhaustion",
