@@ -1,0 +1,6 @@
+{
+	"name": "Undead",
+	"description": "Vampires undead condition makes them immune to poison and freezing damage, but weak to fire, and sunlight. They also don't have to breath to survive.",
+	"type": "origins:entity_group",
+	"group": "undead"
+}

@@ -4,6 +4,7 @@
 	"icon": "minecraft:beetroot_soup",
 	"powers": [
 		"origins_vampire:health_regeneration",
+		"origins_vampire:undead",
 		"origins_vampire:death/cry",
 		"origins_vampire:disable/eating",
 		"origins_vampire:disable/hunger",
