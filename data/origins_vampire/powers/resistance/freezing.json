@@ -1,6 +1,7 @@
 {
 	"name": "Cadaverous coldness",
 	"description": "Your undead body is used to coldness.",
+	"hidden": true,
 	"badges": [
 		{
 			"type": "origins:tooltip",

@@ -1,4 +1,5 @@
 {
+	"hidden": true,
 	"type": "origins:damage_over_time",
 	"interval": 20,
 	"damage": 1,

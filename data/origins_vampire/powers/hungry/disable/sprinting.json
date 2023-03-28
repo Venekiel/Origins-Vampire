@@ -1,4 +1,5 @@
 {
+	"hidden": true,
 	"type": "origins:prevent_sprinting",
 	"condition": {
 		"type": "origins:and",

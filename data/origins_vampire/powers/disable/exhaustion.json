@@ -1,4 +1,5 @@
 {
+	"hidden": true,
 	"type": "origins:modify_exhaustion",
 	"modifier": {
 		"operation": "set_total",
