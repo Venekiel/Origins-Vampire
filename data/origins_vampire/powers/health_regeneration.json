@@ -1,0 +1,40 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 8,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:heal",
+				"amount": 1.5
+			},
+			{
+				"type": "origins:exhaust",
+				"amount": 4
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:food_level",
+				"comparison": ">",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:relative_health",
+				"comparison": "<",
+				"compare_to": 1
+			},
+			{
+				"type": "origins:on_fire",
+				"inverted": true
+			},
+			{
+				"type": "origins:exposed_to_sun",
+				"inverted": true
+			}
+		]
+	}
+}
