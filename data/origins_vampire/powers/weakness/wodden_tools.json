@@ -1,5 +1,5 @@
 {
-	"name": "Stakes",
+	"name": "Unholy",
 	"description": "Being hit with a wooden tool or a stick will briefly incapaciate you.",
 	"type": "origins:action_when_hit",
 	"bientity_condition": {
