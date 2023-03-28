@@ -6,6 +6,7 @@
 		"origins_vampire:flight/winged",
 		"origins_vampire:flight/wing_flap",
 		"origins_vampire:health_regeneration",
+		"origins_vampire:death/cry",
 		"origins_vampire:disable/eating",
 		"origins_vampire:disable/hunger",
 		"origins_vampire:disable/exhaustion",
