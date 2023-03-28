@@ -1,0 +1,10 @@
+{
+	"hidden": true,
+	"type": "origins:night_vision",
+	"strength": 0.6,
+	"condition": {
+		"type": "origins:food_level",
+		"comparison": ">=",
+		"compare_to": 11.5
+	}
+}
