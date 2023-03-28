@@ -1,13 +1,5 @@
 {
-	"name": "Heliophobia",
-	"description": "Sunlight will burn you.",
-	"badges": [
-		{
-			"type": "origins:tooltip",
-			"sprite": "origins:textures/gui/badge/info.png",
-			"text": "Burning will prevent your health regeneration."
-		}
-	],
+	"hidden": true,
 	"type": "origins:action_over_time",
 	"interval": 10,
 	"entity_action": {
