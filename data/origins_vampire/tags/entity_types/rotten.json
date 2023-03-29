@@ -1,13 +1,13 @@
 {
-    "values": [
-        "minecraft:husk",
-        "minecraft:drowned",
-        "minecraft:zombie_villager",
-        "minecraft:zombie",
-        "minecraft:phantom",
-        "minecraft:zoglin",
-        "minecraft:zombie_horse",
-        "minecraft:zombified_piglin",
-        "minecraft:ravager"
-    ]
+	"values": [
+		"minecraft:drowned",
+		"minecraft:husk",
+		"minecraft:phantom",
+		"minecraft:ravager",
+		"minecraft:zoglin",
+		"minecraft:zombie",
+		"minecraft:zombie_horse",
+		"minecraft:zombie_villager",
+		"minecraft:zombified_piglin"
+	]
 }

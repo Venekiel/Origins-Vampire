@@ -1,0 +1,13 @@
+{
+	"hidden": true,
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+		"type": "origins:gain_air",
+		"value": 1
+	},
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:bat_form"
+	}
+}

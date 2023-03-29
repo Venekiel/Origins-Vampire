@@ -1,0 +1,31 @@
+{
+	"hidden": true,
+	"type": "origins:modify_air_speed",
+	"modifier": {
+		"operation": "multiply_total",
+		"value": -0.4
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:creative_flying"
+					},
+					{
+						"type": "origins:gamemode",
+						"gamemode": "creative",
+						"inverted": true
+					}
+				]
+			},
+			{
+				"type": "origins:gamemode",
+				"gamemode": "creative",
+				"inverted": true
+			}
+		]
+	}
+}

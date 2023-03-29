@@ -5,7 +5,7 @@
 	"render_elytra": true,
 	"condition": {
 		"type": "origins:power_active",
-		"power": "*:metamorph_toggle",
+		"power": "*:bat_form",
 		"inverted": true
 	}
 }

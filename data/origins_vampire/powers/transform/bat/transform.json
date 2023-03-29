@@ -1,0 +1,55 @@
+{
+	"hidden": true,
+	"type": "origins:action_over_time",
+	"interval": 1,
+	"rising_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "identity equip @s minecraft:bat"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "playsound minecraft:entity.bat.takeoff master @s ~ ~ ~ 1 1"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle dust 0 0 0 5 ~ ~0.9 ~ .4 .4 .4 1 10 normal"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle dust 1 0 0 3 ~ ~0.9 ~ .4 .4 .4 1 8 normal"
+			}
+		]
+	},
+	"falling_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:execute_command",
+				"command": "identity unequip @s"
+			},
+			{
+				"type": "origins:heal",
+				"amount": 14
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "playsound entity.bat.takeoff master @s ~ ~ ~ 1 1"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle dust 0 0 0 5 ~ ~0.9 ~ .4 .4 .4 1 10 normal"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle dust 1 0 0 3 ~ ~0.9 ~ .4 .4 .4 1 8 normal"
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:bat_form"
+	}
+}

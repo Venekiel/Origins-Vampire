@@ -1,0 +1,36 @@
+{
+	"hidden": true,
+	"type": "origins:modify_falling",
+	"velocity": 0.025,
+	"take_fall_damage": false,
+	"condition": {
+		"type": "origins:or",
+		"conditions": [
+			{
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:sneaking"
+					},
+					{
+						"type": "origins:power_active",
+						"power": "*:bat_form"
+					}
+				]
+			},
+			{
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:sneaking",
+						"inverted": true
+					},
+					{
+						"type": "origins:power_active",
+						"power": "*:bat_form"
+					}
+				]
+			}
+		]
+	}
+}
