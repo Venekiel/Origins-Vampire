@@ -1,10 +1,8 @@
 {
 	"hidden": true,
-	"death": {
-		"type": "origins:action_on_callback",
-		"entity_action_respawned": {
-			"type": "origins:toggle",
-			"power": "*:bat_form"
-		}
+	"type": "origins:action_on_callback",
+	"entity_action_respawned": {
+		"type": "origins:toggle",
+		"power": "*:bat_form"
 	}
 }
