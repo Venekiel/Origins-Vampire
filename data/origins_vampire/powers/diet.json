@@ -1,0 +1,17 @@
+{
+	"name": "Diet",
+	"description": "As vampires, their diet is limited to blood. They can suck it straight from the living or bottle it to drink later. When their thirst is satisfied, vampires are stronger and faster than humans, and can see clearly in the dark.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "Sneak + Right click entities to suck their blood."
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "Right click entities with a glass bottle in offhand to fill it with their blood."
+		}
+	],
+	"type": "origins:simple"
+}

@@ -1,0 +1,58 @@
+{
+	"hidden": true,
+	"type": "origins:action_over_time",
+	"interval": 10,
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:damage",
+				"amount": 1,
+				"source": {
+					"name": "sun_damage",
+					"fire": true,
+					"bypasses_armor": true
+				}
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "playsound minecraft:block.fire.extinguish voice @a[distance=..15] ~ ~ ~"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle minecraft:smoke ~ ~1 ~ 0.5 0.5 0.5 0 10"
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0 3"
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:exposed_to_sun"
+			},
+			{
+				"type": "origins:power_active",
+				"power": "*:bat_form",
+				"inverted": true
+			},
+			{
+				"type": "origins:or",
+				"inverted": true,
+				"conditions": [
+					{
+						"type": "origins:gamemode",
+						"gamemode": "creative"
+					},
+					{
+						"type": "origins:gamemode",
+						"gamemode": "spectator"
+					}
+				]
+			}
+		]
+	}
+}

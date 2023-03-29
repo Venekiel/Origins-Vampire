@@ -1,0 +1,28 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"drink": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 4,
+			"saturation": 0
+		},
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:average}"
+		}
+	},
+	"prevent_drinking_at_full_hunger": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:average}"
+		},
+		"condition": {
+			"type": "origins:food_level",
+			"comparison": "==",
+			"compare_to": 20
+		}
+	}
+}

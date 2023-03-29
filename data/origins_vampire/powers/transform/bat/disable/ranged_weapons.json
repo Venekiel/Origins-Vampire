@@ -1,0 +1,16 @@
+{
+	"hidden": true,
+	"type": "origins:prevent_item_use",
+	"item_condition": {
+		"type": "origins:ingredient",
+		"ingredient": [
+			{
+				"tag": "origins_vampire:weapon/ranged"
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:bat_form"
+	}
+}

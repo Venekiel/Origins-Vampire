@@ -1,0 +1,14 @@
+{
+	"hidden": true,
+	"type": "origins:conditioned_attribute",
+	"modifier": {
+		"attribute": "generic.armor",
+		"value": -1,
+		"operation": "multiply_total"
+	},
+	"tick_rate": 2,
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:bat_form"
+	}
+}

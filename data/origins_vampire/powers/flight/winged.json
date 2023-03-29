@@ -1,0 +1,10 @@
+{
+	"hidden": true,
+	"type": "origins:elytra_flight",
+	"render_elytra": true,
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:bat_form",
+		"inverted": true
+	}
+}
