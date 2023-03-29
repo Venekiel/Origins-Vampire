@@ -33,6 +33,7 @@
 		"origins_vampire:blood/suck/toxic",
 		"origins_vampire:death/cry",
 		"origins_vampire:death/transform/bat",
+		"origins_vampire:diet",
 		"origins_vampire:disable/eating",
 		"origins_vampire:disable/exhaustion",
 		"origins_vampire:disable/hunger",
