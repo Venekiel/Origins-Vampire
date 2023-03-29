@@ -1,0 +1,12 @@
+{
+	"hidden": true,
+	"type": "origins:modify_break_speed",
+	"modifier": {
+		"operation": "set_total",
+		"value": 0
+	},
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:bat_form"
+	}
+}
