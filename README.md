@@ -1,4 +1,7 @@
 # Origins-Vampire
+
+**Required dependency: [Identity mod](https://www.curseforge.com/minecraft/mc-mods/identity/files/4399470)** (since version 2.0.0)
+
 Origins: Vampire brings 2 origins to the game :
 - Vampire
 - Vampire Lord
