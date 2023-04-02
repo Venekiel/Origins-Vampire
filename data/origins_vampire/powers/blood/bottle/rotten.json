@@ -71,8 +71,27 @@
 	"bientity_condition": {
 		"type": "origins:target_condition",
 		"condition": {
-			"type": "origins:in_tag",
-			"tag": "origins_vampire:rotten"
+			"type": "origins:or",
+			"conditions": [
+				{
+					"type": "origins:in_tag",
+					"tag": "origins_vampire:rotten"
+				},
+				{
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:entity_group",
+							"group": "undead"
+						},
+						{
+							"type": "origins:in_tag",
+							"tag": "minecraft:skeletons",
+							"inverted": true
+						}
+					]
+				}
+			]
 		}
 	},
 	"condition": {
