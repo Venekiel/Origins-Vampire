@@ -19,6 +19,11 @@
 				"type": "origins:grant_power",
 				"power": "*:weakness/sun",
 				"source": "*:*"
+			},
+			{
+				"type": "origins:grant_power",
+				"power": "*:death/cry",
+				"source": "*:*"
 			}
 		]
 	},
@@ -38,6 +43,11 @@
 			{
 				"type": "origins:revoke_power",
 				"power": "*:weakness/sun",
+				"source": "*:*"
+			},
+			{
+				"type": "origins:revoke_power",
+				"power": "*:death/cry",
 				"source": "*:*"
 			}
 		]
