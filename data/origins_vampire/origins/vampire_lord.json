@@ -58,8 +58,6 @@
 		"origins_vampire:hungry/strength_2",
 		"origins_vampire:hungry/weakness",
 		"origins_vampire:hunters_instinct",
-		"origins_vampire:immunity/poison",
-		"origins_vampire:resistance/freezing",
 		"origins_vampire:transform/bat/disable/armor",
 		"origins_vampire:transform/bat/disable/attack_damage",
 		"origins_vampire:transform/bat/disable/breaking_blocks",
@@ -70,7 +68,6 @@
 		"origins_vampire:transform/bat/transform",
 		"origins_vampire:transform/bat/water_breathing",
 		"origins_vampire:undead",
-		"origins_vampire:weakness/sun",
 		"origins_vampire:weakness/wooden_tools"
 	],
 	"unchoosable": true,
