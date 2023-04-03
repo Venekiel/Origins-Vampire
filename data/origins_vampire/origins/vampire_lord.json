@@ -3,10 +3,7 @@
 	"description": "Pureblood vampires who received their vampirism through another pureblood vampire or from deities themselves.",
 	"icon": "minecraft:beetroot_soup",
 	"powers": [
-		"origins_vampire:flight/winged",
 		"origins_vampire:flight/wing_flap",
-		"origins_vampire:detect_living/friendly",
-		"origins_vampire:detect_living/hostile",
 		"origins_vampire:bat_form",
 		"origins_vampire:diet",
 		"origins_vampire:health_regeneration",
