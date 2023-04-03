@@ -40,6 +40,11 @@
 				"inverted": true
 			},
 			{
+				"type": "origins:predicate",
+				"predicate": "*:weather/is_raining",
+				"inverted": true
+			},
+			{
 				"type": "origins:or",
 				"inverted": true,
 				"conditions": [
