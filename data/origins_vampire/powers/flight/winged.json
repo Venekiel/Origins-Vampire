@@ -4,7 +4,7 @@
 	"render_elytra": true,
 	"condition": {
 		"type": "origins:power_active",
-		"power": "*:bat_form",
+		"power": "*:bat_form_toggle",
 		"inverted": true
 	}
 }

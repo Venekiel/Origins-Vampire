@@ -14,7 +14,7 @@
 					},
 					{
 						"type": "origins:power_active",
-						"power": "*:bat_form"
+						"power": "*:bat_form_toggle"
 					}
 				]
 			},
@@ -27,7 +27,7 @@
 					},
 					{
 						"type": "origins:power_active",
-						"power": "*:bat_form"
+						"power": "*:bat_form_toggle"
 					}
 				]
 			}
