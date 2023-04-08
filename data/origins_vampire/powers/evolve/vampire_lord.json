@@ -1,0 +1,105 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"timer": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 5,
+		"start_value": 5,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 14
+		}
+	},
+	"decrease_timer": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_timer",
+			"change": -1
+		}
+	},
+	"stun": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effects": [
+				{
+					"effect": "minecraft:blindness",
+					"duration": 22,
+					"amplifier": 2,
+					"is_ambient": false,
+					"show_particles": false,
+					"show_icon": false
+				},
+				{
+					"effect": "minecraft:slowness",
+					"duration": 2,
+					"amplifier": 10,
+					"is_ambient": false,
+					"show_particles": false,
+					"show_icon": false
+				}
+			]
+		}
+	},
+	"fx": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"rising_action": {
+			"type": "origins:execute_command",
+			"command": "playsound minecraft:entity.zombie_villager.cure master @a[distance=..15]"
+		},
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "particle dust 0 0 0 5 ~ ~0.9 ~ .4 .4 .4 1 10 normal"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "particle dust 1 0 0 3 ~ ~0.9 ~ .4 .4 .4 1 8 normal"
+				}
+			]
+		}
+	},
+	"revoke_power": {
+		"type": "origins:action_over_time",
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:clear_effect",
+					"effect": "minecraft:blindness"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.zombie_villager.converted master @a[distance=..15]"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.ender_dragon.flap master @a[distance=..15]"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "origin set @s origins:origin origins_vampire:vampire_lord"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "power remove @s origins_vampire:evolve/vampire_lord"
+				}
+			]
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "*:*_timer",
+			"comparison": "==",
+			"compare_to": 0
+		}
+	}
+}
