@@ -29,7 +29,7 @@
 			"effects": [
 				{
 					"effect": "minecraft:blindness",
-					"duration": 21,
+					"duration": 22,
 					"amplifier": 2,
 					"is_ambient": false,
 					"show_particles": false,
