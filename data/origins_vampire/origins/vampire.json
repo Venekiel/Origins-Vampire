@@ -7,14 +7,8 @@
 		"origins_vampire:diet",
 		"origins_vampire:health_regeneration",
 		"origins_vampire:undead",
-		"origins_vampire:weakness/wooden_tools"
-	],
-	"upgrades": [
-		{
-			"condition": "minecraft:end/kill_dragon",
-			"origin": "origins_vampire:vampire_lord",
-			"announcement": "You have killed an ender dragon! You become a Vampire Lord"
-		}
+		"origins_vampire:weakness/wooden_tools",
+		"origins_vampire:blood/drink/ender_dragon"
 	],
 	"order": 1,
 	"impact": 3

@@ -1,0 +1,26 @@
+{
+	"hidden": true,
+	"type": "origins:multiple",
+	"drink": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:feed",
+					"food": 6,
+					"saturation": 0
+				},
+				{
+					"type": "origins:grant_power",
+					"power": "*:evolve/vampire_lord",
+					"source": "*:*"
+				}
+			]
+		},
+		"item_condition": {
+			"type": "origins:nbt",
+			"nbt": "{BloodQuality:ender_dragon}"
+		}
+	}
+}
