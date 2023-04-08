@@ -1,6 +1,26 @@
 {
 	"hidden": true,
 	"type": "origins:multiple",
+	"timer": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 5,
+		"start_value": 5,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 14
+		}
+	},
+	"decrease_timer": {
+		"type": "origins:action_over_time",
+		"interval": 20,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_timer",
+			"change": -1
+		}
+	},
 	"stun": {
 		"type": "origins:action_over_time",
 		"interval": 1,
@@ -45,26 +65,6 @@
 					"command": "particle dust 1 0 0 3 ~ ~0.9 ~ .4 .4 .4 1 8 normal"
 				}
 			]
-		}
-	},
-	"timer": {
-		"type": "origins:resource",
-		"min": 0,
-		"max": 5,
-		"start_value": 5,
-		"hud_render": {
-			"should_render": true,
-			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-			"bar_index": 14
-		}
-	},
-	"decrease_timer": {
-		"type": "origins:action_over_time",
-		"interval": 20,
-		"entity_action": {
-			"type": "origins:change_resource",
-			"resource": "*:*_timer",
-			"change": -1
 		}
 	},
 	"revoke_power": {
