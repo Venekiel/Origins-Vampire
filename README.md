@@ -6,7 +6,7 @@ Origins: Vampire brings 2 origins to the game :
 - Vampire
 - Vampire Lord
 
-Only the Vampire origin is selectable when choosing your origin. You'll need to obtain the advancement "[Free the End](https://minecraft.fandom.com/wiki/The_End#Achievements)" to evolve from a Vampire to a Vampire Lord
+Only the Vampire origin is selectable when choosing your origin. You'll need to obtain the advancement "[Free the End](https://minecraft.fandom.com/wiki/The_End#Achievements)" to evolve from a Vampire to a Vampire Lord (Since v2.1.0, you need to drink the Ender Dragon's blood in order to become a Vampire Lord)
 
 ## Vampire
 
