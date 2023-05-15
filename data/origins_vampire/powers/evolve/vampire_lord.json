@@ -46,6 +46,14 @@
 			]
 		}
 	},
+	"start_message": {
+		"type": "origins:action_over_time",
+		"interval": 5,
+		"rising_action": {
+			"type": "origins:execute_command",
+			"command": "title @s actionbar \"§4You feel a strange power growing in you...§f\""
+		}
+	},
 	"fx": {
 		"type": "origins:action_over_time",
 		"interval": 5,
@@ -88,6 +96,10 @@
 				{
 					"type": "origins:execute_command",
 					"command": "origin set @s origins:origin origins_vampire:vampire_lord"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "title @s actionbar \"§4You are now a Vampire Lord§f\""
 				},
 				{
 					"type": "origins:execute_command",
