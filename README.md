@@ -1,6 +1,6 @@
 # Origins-Vampire
 
-**Required dependency: [Identity mod](https://www.curseforge.com/minecraft/mc-mods/identity/files/4399470)** (since version 2.0.0)
+**Required dependency: [Identity mod](https://www.curseforge.com/minecraft/mc-mods/identity/files/4399470) (since version 2.0.0 up to 2.1.0) | [Woodwalkers mod](https://modrinth.com/mod/woodwalkers) (since version 2.2.0)**
 
 Origins: Vampire brings 2 origins to the game :
 - Vampire
