@@ -16,7 +16,7 @@ Your changes will be tested and reviewed by me (i.e. Venekiel) or other contribu
 1. Create a new branch :
    Go to the [project's branch list](https://github.com/Venekiel/Origins-Vampire/branches) and create a new one by clicking on the green button labelled "New branch" in the top right. See [Naming conventions > Branches](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#branches) for naming conventions.
 2. Now from the [project's branch list](https://github.com/Venekiel/Origins-Vampire/branches), select the branch you newly created and edit the files you want to change.
-3. Once you are done making changes, [create a pull request](https://github.com/Venekiel/Origins-Vampire/compare/latest...latest). See [Naming conventions > Pull requests]([#](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#pull-requests)) for naming conventions.
+3. Once you are done making changes, [create a pull request](https://github.com/Venekiel/Origins-Vampire/compare/latest...latest). See [Naming conventions > Pull requests](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#pull-requests) for naming conventions.
 
 
 ## Guidelines
