@@ -8,15 +8,15 @@
 3. Click on "Commit changes...", a green button in the top right corner of the page.
 4. type in a message explaining what you tried to change with this modifications.
 5. Select "Create a new branch for this commit and start a pull request".
-6. Type in a **name for the branch** you are creating to help others know what it is about. See [Naming conventions > Branches](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#branches) for naming conventions.
+6. Type in a **name for the branch** you are creating to help others know what it is about. See [Guidelines > Naming conventions > Branches](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#branches) for naming conventions.
 
 Your changes will be tested and reviewed by me (i.e. Venekiel) or other contributors to make sure no bugs are introduced and that the source will remain maintainable.
 
 ### Bigger changes (more than a file)
 1. Create a new branch :
-   Go to the [project's branch list](https://github.com/Venekiel/Origins-Vampire/branches) and create a new one by clicking on the green button labelled "New branch" in the top right. See [Naming conventions > Branches](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#branches) for naming conventions.
+   Go to the [project's branch list](https://github.com/Venekiel/Origins-Vampire/branches) and create a new one by clicking on the green button labelled "New branch" in the top right. See [Guidelines > Naming conventions > Branches](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#branches) for naming conventions.
 2. Now from the [project's branch list](https://github.com/Venekiel/Origins-Vampire/branches), select the branch you newly created and edit the files you want to change.
-3. Once you are done making changes, [create a pull request](https://github.com/Venekiel/Origins-Vampire/compare/latest...latest). See [Naming conventions > Pull requests](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#pull-requests) for naming conventions.
+3. Once you are done making changes, [create a pull request](https://github.com/Venekiel/Origins-Vampire/compare/latest...latest). See [Guidelines > Naming conventions > Pull requests](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#pull-requests) for naming conventions.
 
 
 ## Guidelines
