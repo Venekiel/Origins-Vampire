@@ -18,6 +18,16 @@ Your changes will be tested and reviewed by me (i.e. Venekiel) or other contribu
 2. Now from the [project's branch list](https://github.com/Venekiel/Origins-Vampire/branches), select the branch you newly created and edit the files you want to change.
 3. Once you are done making changes, [create a pull request](https://github.com/Venekiel/Origins-Vampire/compare/latest...latest). See [Guidelines > Naming conventions > Pull requests](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#pull-requests) for naming conventions.
 
+   - In the "base" dropdown, select the branch you want to apply your changes to. (most likely "latest")
+   - In the "compare" dropdown, select the branch containing your changes.
+   - click on the green "Create pull request" button.
+   - Name your pull request. See [Guidelines > Naming conventions > Pull requests](https://github.com/Venekiel/Origins-Vampire/blob/doc/add-contributing.md/CONTRIBUTING.md#pull-requests) for naming conventions.
+   - You can assign yourself to the pull request so the community knows who worked on it and so you receive updates on your pull request's status.
+   - Add a description to explain why you made those changes, why you made it a certain way, and how people could test the effect of the changes.
+   - You can also add labels that match the changes.
+
+Your changes will be tested and reviewed by me (i.e. Venekiel) or other contributors to make sure no bugs are introduced and that the source will remain          maintainable.
+
 
 ## Guidelines
 ### Naming conventions
