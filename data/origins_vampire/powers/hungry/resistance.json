@@ -5,7 +5,7 @@
 	"entity_action": {
 		"type": "origins:apply_effect",
 		"effect": {
-			"effect": "minecraft:resistance",
+			"id": "minecraft:resistance",
 			"duration": 2,
 			"amplifier": 1,
 			"is_ambient": false,

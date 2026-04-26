@@ -41,7 +41,7 @@
 					"type": "origins:apply_effect",
 					"effects": [
 						{
-							"effect": "minecraft:blindness",
+							"id": "minecraft:blindness",
 							"duration": 60,
 							"amplifier": 2,
 							"is_ambient": false,
@@ -49,7 +49,7 @@
 							"show_icon": false
 						},
 						{
-							"effect": "minecraft:instant_health",
+							"id": "minecraft:instant_health",
 							"duration": 1,
 							"amplifier": 1,
 							"is_ambient": false,
@@ -57,7 +57,7 @@
 							"show_icon": false
 						},
 						{
-							"effect": "minecraft:slowness",
+							"id": "minecraft:slowness",
 							"duration": 60,
 							"amplifier": 10,
 							"is_ambient": false,

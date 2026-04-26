@@ -28,7 +28,7 @@
 			"type": "origins:apply_effect",
 			"effects": [
 				{
-					"effect": "minecraft:blindness",
+					"id": "minecraft:blindness",
 					"duration": 22,
 					"amplifier": 2,
 					"is_ambient": false,
@@ -36,7 +36,7 @@
 					"show_icon": false
 				},
 				{
-					"effect": "minecraft:slowness",
+					"id": "minecraft:slowness",
 					"duration": 2,
 					"amplifier": 10,
 					"is_ambient": false,
@@ -51,7 +51,7 @@
 		"interval": 5,
 		"rising_action": {
 			"type": "origins:execute_command",
-			"command": "title @s actionbar \"§4You feel a strange power growing in you...§f\""
+			"command": "title @s actionbar \"§4You feel a strange power growing within you...§f\""
 		}
 	},
 	"fx": {
@@ -66,11 +66,11 @@
 			"actions": [
 				{
 					"type": "origins:execute_command",
-					"command": "particle dust 0 0 0 5 ~ ~0.9 ~ .4 .4 .4 1 10 normal"
+					"command": "particle dust{color:[0.0,0.0,0.0],scale:4} ~ ~0.9 ~ .4 .4 .4 1 10 normal"
 				},
 				{
 					"type": "origins:execute_command",
-					"command": "particle dust 1 0 0 3 ~ ~0.9 ~ .4 .4 .4 1 8 normal"
+					"command": "particle dust{color:[1.0,0.0,0.0],scale:3} ~ ~0.9 ~ .4 .4 .4 1 8 normal"
 				}
 			]
 		}
@@ -83,7 +83,7 @@
 			"actions": [
 				{
 					"type": "origins:clear_effect",
-					"effect": "minecraft:blindness"
+					"id": "minecraft:blindness"
 				},
 				{
 					"type": "origins:execute_command",

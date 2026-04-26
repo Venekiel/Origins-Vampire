@@ -12,20 +12,20 @@
 				},
 				{
 					"type": "origins:feed",
-					"food": 4,
+					"nutrition": 4,
 					"saturation": 0
 				}
 			]
 		},
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:sizzling}"
 		}
 	},
 	"prevent_drinking_at_full_hunger": {
 		"type": "origins:prevent_item_use",
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:sizzling}"
 		},
 		"condition": {

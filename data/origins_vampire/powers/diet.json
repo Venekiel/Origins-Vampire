@@ -1,6 +1,6 @@
 {
 	"name": "Diet",
-	"description": "As vampires, their diet is limited to blood. They can suck it straight from the living or bottle it to drink later. When their thirst is satisfied, vampires are stronger and faster than humans, and can see clearly in the dark.",
+	"description": "Your diet is limited to blood. You can suck it straight from the living or bottle it to drink later. When your thirst is satisfied, you are stronger and faster than humans, and can see clearly in the dark.",
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -54,7 +54,7 @@
 			},
 			{
 				"type": "origins:grant_power",
-				"power": "*:blood/suck/slimey",
+				"power": "*:blood/suck/slimy",
 				"source": "*:*"
 			},
 			{
@@ -99,7 +99,7 @@
 			},
 			{
 				"type": "origins:grant_power",
-				"power": "*:blood/bottle/slimey",
+				"power": "*:blood/bottle/slimy",
 				"source": "*:*"
 			},
 			{
@@ -144,7 +144,7 @@
 			},
 			{
 				"type": "origins:grant_power",
-				"power": "*:blood/drink/slimey",
+				"power": "*:blood/drink/slimy",
 				"source": "*:*"
 			},
 			{
@@ -284,7 +284,7 @@
 			},
 			{
 				"type": "origins:revoke_power",
-				"power": "*:blood/suck/slimey",
+				"power": "*:blood/suck/slimy",
 				"source": "*:*"
 			},
 			{
@@ -329,7 +329,7 @@
 			},
 			{
 				"type": "origins:revoke_power",
-				"power": "*:blood/bottle/slimey",
+				"power": "*:blood/bottle/slimy",
 				"source": "*:*"
 			},
 			{
@@ -374,7 +374,7 @@
 			},
 			{
 				"type": "origins:revoke_power",
-				"power": "*:blood/drink/slimey",
+				"power": "*:blood/drink/slimy",
 				"source": "*:*"
 			},
 			{

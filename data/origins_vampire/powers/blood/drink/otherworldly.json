@@ -20,20 +20,20 @@
 				},
 				{
 					"type": "origins:feed",
-					"food": 6,
+					"nutrition": 6,
 					"saturation": 0
 				}
 			]
 		},
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:otherworldly}"
 		}
 	},
 	"prevent_drinking_at_full_hunger": {
 		"type": "origins:prevent_item_use",
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:otherworldly}"
 		},
 		"condition": {

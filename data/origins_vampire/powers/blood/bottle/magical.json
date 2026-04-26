@@ -9,8 +9,20 @@
 				"action": {
 					"type": "origins:give",
 					"stack": {
-						"item": "minecraft:potion",
-						"tag": "{Potion:\"minecraft:empty\",display:{Name:'{\"text\":\"Bottle of blood\",\"italic\":false}',Lore:['{\"text\":\"Magical\",\"color\":\"light_purple\"}']},HideFlags:32,CustomPotionColor:7667712,BloodQuality:magical}"
+						"id": "minecraft:potion",
+						"components": {
+							"minecraft:custom_name": "{\"text\":\"Bottle of blood\",\"italic\":false}",
+							"minecraft:lore": [
+								"{\"text\":\"Magical\",\"color\":\"light_purple\"}"
+							],
+							"minecraft:potion_contents": {
+								"custom_color": 7667712
+							},
+							"minecraft:hide_additional_tooltip": {},
+							"minecraft:custom_data": {
+								"BloodQuality": "magical"
+							}
+						}
 					},
 					"preferred_slot": "offhand"
 				}
@@ -20,7 +32,7 @@
 				"action": {
 					"type": "origins:equipped_item_action",
 					"equipment_slot": "offhand",
-					"action": {
+					"item_action": {
 						"type": "origins:consume",
 						"amount": 1
 					}
@@ -31,7 +43,7 @@
 				"action": {
 					"type": "origins:apply_effect",
 					"effect": {
-						"effect": "minecraft:slowness",
+						"id": "minecraft:slowness",
 						"duration": 60,
 						"amplifier": 1,
 						"show_particles": false,
@@ -44,6 +56,7 @@
 				"action": {
 					"type": "origins:damage",
 					"amount": 3,
+					"damage_type": "minecraft:magic",
 					"source": {
 						"name": "magic",
 						"bypasses_armor": true,

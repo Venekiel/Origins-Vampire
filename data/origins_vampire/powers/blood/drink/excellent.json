@@ -5,18 +5,18 @@
 		"type": "origins:action_on_item_use",
 		"entity_action": {
 			"type": "origins:feed",
-			"food": 8,
+			"nutrition": 8,
 			"saturation": 0
 		},
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:excellent}"
 		}
 	},
 	"prevent_drinking_at_full_hunger": {
 		"type": "origins:prevent_item_use",
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:excellent}"
 		},
 		"condition": {

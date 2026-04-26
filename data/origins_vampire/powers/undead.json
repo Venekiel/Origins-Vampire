@@ -1,6 +1,6 @@
 {
 	"name": "Undead",
-	"description": "Vampires undead condition makes them immune to poison and freezing damage, but weak to fire, and sunlight. They also don't have to breath to survive.",
+	"description": "Your undead condition makes you immune to poison and freezing damage, but weak to fire, and sunlight. You also have no need for oxygen.",
 	"type": "origins:action_on_callback",
 	"entity_action_gained": {
 		"type": "origins:and",

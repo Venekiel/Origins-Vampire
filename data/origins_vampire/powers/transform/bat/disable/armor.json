@@ -2,9 +2,10 @@
 	"hidden": true,
 	"type": "origins:conditioned_attribute",
 	"modifier": {
+		"id": "noarmor",
 		"attribute": "generic.armor",
-		"value": -1,
-		"operation": "multiply_total"
+		"amount": -1,
+		"operation": "add_multiplied_total"
 	},
 	"tick_rate": 2,
 	"condition": {

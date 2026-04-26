@@ -10,7 +10,7 @@
 					"type": "origins:apply_effect",
 					"effects": [
 						{
-							"effect": "minecraft:absorption",
+							"id": "minecraft:absorption",
 							"duration": 1000,
 							"amplifier": 1,
 							"is_ambient": false,
@@ -18,7 +18,7 @@
 							"show_icon": false
 						},
 						{
-							"effect": "minecraft:speed",
+							"id": "minecraft:speed",
 							"duration": 1000,
 							"amplifier": 2,
 							"is_ambient": false,
@@ -29,26 +29,14 @@
 				},
 				{
 					"type": "origins:feed",
-					"food": 8,
+					"nutrition": 8,
 					"saturation": 0
 				}
 			]
 		},
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:magical}"
-		}
-	},
-	"prevent_drinking_at_full_hunger": {
-		"type": "origins:prevent_item_use",
-		"item_condition": {
-			"type": "origins:nbt",
-			"nbt": "{BloodQuality:magical}"
-		},
-		"condition": {
-			"type": "origins:food_level",
-			"comparison": "==",
-			"compare_to": 20
 		}
 	}
 }
