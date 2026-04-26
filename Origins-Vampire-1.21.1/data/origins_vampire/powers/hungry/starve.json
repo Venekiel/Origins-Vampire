@@ -1,0 +1,26 @@
+{
+	"hidden": true,
+	"type": "origins:damage_over_time",
+	"interval": 20,
+	"damage": 1,
+	"damage_source": {
+		"name": "starve",
+		"bypasses_armor": true,
+		"unblockable": true
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:food_level",
+				"comparison": "==",
+				"compare_to": 0
+			},
+			{
+				"type": "origins:relative_health",
+				"comparison": ">",
+				"compare_to": 0.05
+			}
+		]
+	}
+}

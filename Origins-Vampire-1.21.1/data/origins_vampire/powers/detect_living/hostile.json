@@ -1,0 +1,35 @@
+{
+	"hidden": true,
+	"type": "origins:entity_glow",
+	"entity_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:living"
+			},
+			{
+				"type": "origins:in_tag",
+				"tag": "origins_vampire:hostile"
+			}
+		]
+	},
+	"bientity_condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:distance",
+				"comparison": "<=",
+				"compare_to": 30
+			},
+			{
+				"type": "origins:can_see",
+				"shape_type": "outline",
+				"inverted": true
+			}
+		]
+	},
+	"use_teams": false,
+	"red": 0.5,
+	"green": 0.1,
+	"blue": 0.1
+}

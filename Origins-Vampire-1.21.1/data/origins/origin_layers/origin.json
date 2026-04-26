@@ -1,0 +1,7 @@
+{
+	"auto_choose": false,
+	"randomizer": false,
+	"replace": false,
+	"allow_random_unchoosable": false,
+	"origins": ["origins_vampire:vampire", "origins_vampire:vampire_lord"]
+}

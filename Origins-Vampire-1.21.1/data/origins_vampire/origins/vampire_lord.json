@@ -1,0 +1,18 @@
+{
+	"name": "Vampire Lord",
+	"description": "Pureblood vampires who received their vampirism through another pureblood vampire or from deities themselves.",
+	"icon": {"id": "minecraft:beetroot_soup"},
+	"powers": [
+		"origins_vampire:flight/wing_flap",
+		"origins_vampire:bat_form",
+		"origins_vampire:diet",
+		"origins_vampire:health_regeneration",
+		"origins_vampire:hunters_instinct",
+		"origins_vampire:undead",
+		"origins_vampire:weakness/wooden_tools",
+		"origins_vampire:exhaust_multiplier"
+	],
+	"unchoosable": true,
+	"order": 1,
+	"impact": 3
+}

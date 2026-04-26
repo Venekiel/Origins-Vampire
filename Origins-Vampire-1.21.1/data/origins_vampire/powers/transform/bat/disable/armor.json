@@ -1,0 +1,15 @@
+{
+	"hidden": true,
+	"type": "origins:conditioned_attribute",
+	"modifier": {
+		"id": "noarmor",
+		"attribute": "generic.armor",
+		"amount": -1,
+		"operation": "add_multiplied_total"
+	},
+	"tick_rate": 2,
+	"condition": {
+		"type": "origins:power_active",
+		"power": "*:bat_form_toggle"
+	}
+}
