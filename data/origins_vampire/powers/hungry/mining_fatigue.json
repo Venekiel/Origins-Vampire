@@ -5,7 +5,7 @@
 	"entity_action": {
 		"type": "origins:apply_effect",
 		"effect": {
-			"effect": "minecraft:mining_fatigue",
+			"id": "minecraft:mining_fatigue",
 			"duration": 2,
 			"amplifier": 1,
 			"show_particles": false,

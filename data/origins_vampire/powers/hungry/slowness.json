@@ -5,7 +5,7 @@
 	"entity_action": {
 		"type": "origins:apply_effect",
 		"effect": {
-			"effect": "minecraft:slowness",
+			"id": "minecraft:slowness",
 			"duration": 2,
 			"amplifier": 2,
 			"show_particles": false,

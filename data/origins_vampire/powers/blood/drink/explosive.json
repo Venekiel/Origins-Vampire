@@ -9,26 +9,26 @@
 				{
 					"type": "origins:explode",
 					"power": 1,
-					"destruction_type": "none",
+					"destruction_type": "keep",
 					"damage_self": true,
 					"create_fire": false
 				},
 				{
 					"type": "origins:feed",
-					"food": 6,
+					"nutrition": 6,
 					"saturation": 0
 				}
 			]
 		},
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:explosive}"
 		}
 	},
 	"prevent_drinking_at_full_hunger": {
 		"type": "origins:prevent_item_use",
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:explosive}"
 		},
 		"condition": {
