@@ -7,6 +7,7 @@
 		"actions": [
 			{
 				"type": "origins:damage",
+				"damage_type": "minecraft:on_fire",
 				"amount": 1,
 				"source": {
 					"name": "sun_damage",
@@ -41,7 +42,7 @@
 			},
 			{
 				"type": "origins:predicate",
-				"predicate": "*:weather/is_raining",
+				"predicate": "origins_vampire:weather/is_raining",
 				"inverted": true
 			},
 			{

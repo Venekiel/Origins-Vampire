@@ -1,6 +1,6 @@
 {
 	"name": "Regeneration",
-	"description": "Vampires heal faster but it makes them thirsty quickly. Their weakness to fire and sunlight prevents them from healing while affected by this.",
+	"description": "You heal faster but it makes you thirsty quickly. You are unable to heal while burning.",
 	"type": "origins:action_over_time",
 	"interval": 8,
 	"entity_action": {
@@ -11,8 +11,20 @@
 				"amount": 1.5
 			},
 			{
+				"type": "origins:change_resource",
+				"resource": "origins_vampire:exhaust_multiplier",
+				"change": 0,
+				"operation": "set"
+			},
+			{
 				"type": "origins:exhaust",
 				"amount": 4
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "origins_vampire:exhaust_multiplier",
+				"change": -1,
+				"operation": "set"
 			}
 		]
 	},

@@ -1,0 +1,7 @@
+{
+    "hidden": true,
+    "type": "origins:replace_loot_table",
+    "replace": {
+        "minecraft:entities/ender_dragon": "vampire_loot:entities/ender_dragon_blood"
+    }
+}

@@ -8,7 +8,7 @@
 			"actions": [
 				{
 					"type": "origins:feed",
-					"food": 6,
+					"nutrition": 6,
 					"saturation": 0
 				},
 				{
@@ -19,7 +19,7 @@
 			]
 		},
 		"item_condition": {
-			"type": "origins:nbt",
+			"type": "origins:custom_data",
 			"nbt": "{BloodQuality:ender_dragon}"
 		}
 	}

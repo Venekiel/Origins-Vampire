@@ -34,6 +34,7 @@
 						},
 						{
 							"type": "origins:damage",
+							"damage_type": "minecraft:thorns",
 							"amount": 1,
 							"source": {
 								"name": "thorns"
@@ -43,7 +44,7 @@
 							"type": "origins:apply_effect",
 							"effects": [
 								{
-									"effect": "minecraft:slowness",
+									"id": "minecraft:slowness",
 									"duration": 50,
 									"amplifier": 3,
 									"is_ambient": false,
@@ -51,7 +52,7 @@
 									"show_icon": false
 								},
 								{
-									"effect": "minecraft:nausea",
+									"id": "minecraft:nausea",
 									"duration": 200,
 									"amplifier": 3,
 									"is_ambient": false,
@@ -74,7 +75,7 @@
 						},
 						{
 							"type": "origins:feed",
-							"food": 2,
+							"nutrition": 2,
 							"saturation": 0
 						}
 					]

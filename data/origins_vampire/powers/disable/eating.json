@@ -2,6 +2,11 @@
 	"hidden": true,
 	"type": "origins:prevent_item_use",
 	"item_condition": {
-		"type": "origins:food"
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:food"
+			}
+		]
 	}
 }
