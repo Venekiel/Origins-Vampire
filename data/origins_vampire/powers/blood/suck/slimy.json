@@ -12,6 +12,11 @@
 				}
 			},
 			{
+				"type": "origins:damage",
+				"damage_type": "minecraft:thorns",
+				"amount": 1
+			},
+			{
 				"type": "origins:target_action",
 				"action": {
 					"type": "origins:and",
@@ -23,14 +28,6 @@
 						{
 							"type": "origins:execute_command",
 							"command": "playsound minecraft:item.honey_bottle.drink ambient @p"
-						},
-						{
-							"type": "origins:damage",
-							"damage_type": "minecraft:thorns",
-							"amount": 1,
-							"source": {
-								"name": "thorns"
-							}
 						},
 						{
 							"type": "origins:apply_effect",

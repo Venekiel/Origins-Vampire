@@ -12,13 +12,18 @@
 				}
 			},
 			{
+				"type": "origins:damage",
+				"damage_type": "minecraft:thorns",
+				"amount": 1
+			},
+			{
 				"type": "origins:target_action",
 				"action": {
 					"type": "origins:and",
 					"actions": [
 						{
 							"type": "origins:execute_command",
-							"command": "particle dust 1 .5 0 1 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
+							"command": "particle dust{color:[1.0,0.5,0.0],scale:1} ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 						},
 						{
 							"type": "origins:execute_command",
@@ -31,14 +36,6 @@
 						{
 							"type": "origins:execute_command",
 							"command": "playsound minecraft:block.fire.extinguish ambient @p"
-						},
-						{
-							"type": "origins:damage",
-							"damage_type": "minecraft:thorns",
-							"amount": 1,
-							"source": {
-								"name": "thorns"
-							}
 						},
 						{
 							"type": "origins:apply_effect",

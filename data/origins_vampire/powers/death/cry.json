@@ -6,7 +6,7 @@
 		"actions": [
 			{
 				"type": "origins:execute_command",
-				"command": "particle dust .6 .91 .9 1.5 ~ ~1 ~ .2 .2 .2 1 15 normal"
+				"command": "particle dust{color:[0.6,0.91,0.9],scale:1.5} ~ ~1 ~ 0.2 0.2 0.2 1 15 normal"
 			},
 			{
 				"type": "origins:execute_command",

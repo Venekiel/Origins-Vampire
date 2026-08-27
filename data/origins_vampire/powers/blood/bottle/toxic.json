@@ -16,7 +16,7 @@
 								"{\"text\":\"Toxic\",\"color\":\"green\"}"
 							],
 							"minecraft:potion_contents": {
-								"custom_color": 7667712
+								"custom_color": 65280
 							},
 							"minecraft:hide_additional_tooltip": {},
 							"minecraft:custom_data": {
@@ -52,24 +52,15 @@
 				}
 			},
 			{
-				"type": "origins:target_action",
-				"action": {
-					"type": "origins:damage",
-					"amount": 3,
-					"damage_type": "minecraft:magic",
-					"source": {
-						"name": "magic",
-						"bypasses_armor": true,
-						"unblockable": true,
-						"magic": true
-					}
-				}
+				"type": "origins:damage",
+				"amount": 3,
+				"damage_type": "minecraft:magic"
 			},
 			{
 				"type": "origins:target_action",
 				"action": {
 					"type": "origins:execute_command",
-					"command": "particle dust .5 0 0 1.5 ~ ~0.9 ~ 0.2 0.2 0.2 2 10 normal"
+					"command": "particle dust{color:[0.5,0.0,0.0],scale:1.5} ~ ~0.9 ~ 0.2 0.2 0.2 2 10 normal"
 				}
 			},
 			{

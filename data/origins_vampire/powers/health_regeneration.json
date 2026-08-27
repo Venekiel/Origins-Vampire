@@ -46,9 +46,20 @@
 				"inverted": true
 			},
 			{
-				"type": "origins:exposed_to_sun",
-				"inverted": true
-			}
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:exposed_to_sun",
+                            "inverted": true
+                        },
+                        {
+                            "type": "origins:in_rain"
+                        },
+                        {
+                            "type": "origins:in_snow"
+                        }
+                    ]
+                }
 		]
 	}
 }

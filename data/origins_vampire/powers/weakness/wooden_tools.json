@@ -1,6 +1,6 @@
 {
 	"name": "Unholy",
-	"description": "Being hit with a wooden tool or a stick will briefly incapaciate you.",
+	"description": "Being hit with a wooden tool or a stick will briefly incapacitate you.",
 	"type": "origins:action_when_hit",
 	"bientity_condition": {
 		"type": "origins:actor_condition",
@@ -35,7 +35,7 @@
 				},
 				{
 					"type": "origins:execute_command",
-					"command": "particle dust 5 .99 1 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
+					"command": "particle dust{color:[0.5,0.99,1.0],scale:2} ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 				},
 				{
 					"type": "origins:apply_effect",

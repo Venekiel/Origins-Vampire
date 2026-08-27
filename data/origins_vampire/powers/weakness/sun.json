@@ -8,12 +8,7 @@
 			{
 				"type": "origins:damage",
 				"damage_type": "minecraft:on_fire",
-				"amount": 1,
-				"source": {
-					"name": "sun_damage",
-					"fire": true,
-					"bypasses_armor": true
-				}
+				"amount": 1
 			},
 			{
 				"type": "origins:execute_command",
@@ -41,8 +36,11 @@
 				"inverted": true
 			},
 			{
-				"type": "origins:predicate",
-				"predicate": "origins_vampire:weather/is_raining",
+				"type": "origins:in_rain",
+				"inverted": true
+			},
+			{
+				"type": "origins:in_snow",
 				"inverted": true
 			},
 			{

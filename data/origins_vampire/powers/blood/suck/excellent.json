@@ -12,29 +12,26 @@
 				}
 			},
 			{
+				"type": "origins:damage",
+				"damage_type": "minecraft:thorns",
+				"amount": 1
+			},
+			{
 				"type": "origins:target_action",
 				"action": {
 					"type": "origins:and",
 					"actions": [
 						{
 							"type": "origins:execute_command",
-							"command": "particle dust .45 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
+							"command": "particle dust{color:[0.45,0.0,0.0],scale:2} ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 						},
 						{
 							"type": "origins:execute_command",
-							"command": "particle dust 0 0 0 2 ~ ~1.35 ~ 0.2 0.2 0.2 2 5 normal"
+							"command": "particle dust{color:[0.0,0.0,0.0],scale:2} ~ ~1.35 ~ 0.2 0.2 0.2 2 20 normal"
 						},
 						{
 							"type": "origins:execute_command",
 							"command": "playsound minecraft:entity.generic.drink ambient @p"
-						},
-						{
-							"type": "origins:damage",
-							"damage_type": "minecraft:thorns",
-							"amount": 1,
-							"source": {
-								"name": "thorns"
-							}
 						},
 						{
 							"type": "origins:apply_effect",
